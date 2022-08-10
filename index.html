@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jeonju Sound Festival</title>
+	<style type="text/css">
+		#test{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 950px;
+			align-items:center;
+			grid-gap: 0px 0px;
+			
+		}
+		#test a{
+			color: black;
+			text-decoration: none;
+			text-align: center;
+
+		}
+		#test a:hover{
+			animation: color-change 3s;
+			animation-iteration-count: 1;
+		}
+		@keyframes color-change{
+			0%{color:black; font-size: 100%}
+			50%{color:gray; font-size: 200%}
+			100%{color:black; font-size: 100%}
+		}
+		footer{
+			border-top: 1px solid black;
+		}
+		.foot{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}
+		.title{
+			color: black;
+			text-decoration: none;
+		}
+		.title:hover{
+			animation: color_change_title 3s;
+			animation-iteration-count: 1;
+		}
+		@keyframes color_change_title{
+			0%{color:black;}
+			50%{color:gray;}
+			100%{color:black;}
+		}
+		header{
+			display: grid;
+			grid-template-columns: 420px 1fr;
+			border-bottom: 1px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+			function sound(){
+				document.write('<h3>alvanoto</h3>');
+				document.write('<p>alva noto</p>');
+				document.write('<audio autoplay controls>');
+    			document.write('<source src="./1.mp3" type="audio/mp3"></audio>');
+		}
+	</script>
+</head>
+
+<body>
+ 	<header>
+	 	<h1><a class = "title" href = "index.html">JEONJU SOUND FESTIVAL</a></h1>
+	 	<p style="padding-top: 21px;">URBAN ARCHIVE ART PROJECT</p>
+ 	</header>
+
+ 	<div id="test">
+ 		<a href="1.html">DEEP LEARNING</a>
+ 		<a href="2.html">SOUND DATA</a>
+ 		<a href="3.html">FESTIVAL</a>
+ 	
+	</div>
+
+
+		<footer>
+		<div class="foot">
+		<div>JEONJU + SOUND</div>
+		<div>DATA_SET</div>
+		<div>Address</div>
+		<div>Tel:010-9315-6892</div>
+		<div>Accessibility</div>
+		</div>
+		</footer>
+	
+</body>
+</html>
